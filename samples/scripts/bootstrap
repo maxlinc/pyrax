@@ -8,3 +8,5 @@ pip install -q -U -e "git+https://github.com/rackspace/pyrax@working#egg=pyrax"
 # pip -q install -r requirements.txt
 
 # pip -q install pyrax
+
+python scripts/create_config.py
