@@ -1,3 +1,5 @@
 #!/bin/bash
 source pyrax_env/bin/activate
+export PYRAX_CREDS_FILE=`pwd`/.rackspace_cloud_credentials
+export CLOUD_AUTH_ENDPOINT="$OS_AUTH_URL/v2.0/"
 python "$@"

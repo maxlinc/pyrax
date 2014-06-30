@@ -1,2 +1,4 @@
 /pyrax_env/
 /tmp/
+/src/
+.rackspace_cloud_credentials
