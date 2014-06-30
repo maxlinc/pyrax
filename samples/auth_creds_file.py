@@ -32,7 +32,7 @@ pyrax.set_setting("identity_type", "rackspace")
 print()
 print("Using credentials file")
 # Note: you can name this file whatever you like.
-creds_file = os.path.expanduser("~/.rackspace_cloud_credentials")
+creds_file = os.environ.get('PYRAX_CREDS_FILE', os.path.expanduser("~/.rackspace_cloud_credentials"))
 try:
     pyrax.set_credential_file(creds_file)
 except exc.AuthenticationFailed:

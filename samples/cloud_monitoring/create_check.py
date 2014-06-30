@@ -28,7 +28,7 @@ import pyrax
 from util import option_chooser
 
 pyrax.set_setting("identity_type", "rackspace")
-creds_file = os.path.expanduser("~/.rackspace_cloud_credentials")
+creds_file = os.environ.get('PYRAX_CREDS_FILE', os.path.expanduser("~/.rackspace_cloud_credentials"))
 pyrax.set_credential_file(creds_file)
 cm = pyrax.cloud_monitoring
 

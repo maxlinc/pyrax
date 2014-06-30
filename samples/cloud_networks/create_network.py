@@ -23,7 +23,7 @@ import pyrax
 from pyrax import utils
 
 pyrax.set_setting("identity_type", "rackspace")
-creds_file = os.path.expanduser("~/.rackspace_cloud_credentials")
+creds_file = os.environ.get('PYRAX_CREDS_FILE', os.path.expanduser("~/.rackspace_cloud_credentials"))
 pyrax.set_credential_file(creds_file)
 cnw = pyrax.cloud_networks
 new_network_name = "SAMPLE_NETWORK"

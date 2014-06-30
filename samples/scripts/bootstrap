@@ -3,10 +3,11 @@
 virtualenv pyrax_env
 source pyrax_env/bin/activate
 
-# Slow!
-pip install -q -U -e "git+https://github.com/rackspace/pyrax@working#egg=pyrax"
+# Not sure I canget the working branch via requirements.tt
 # pip -q install -r requirements.txt
 
-# pip -q install pyrax
+pip install -q -U -e "git+https://github.com/rackspace/pyrax@working#egg=pyrax"
 
+# Used by scripts/create_config.py
+pip install -q -U pystache
 python scripts/create_config.py
