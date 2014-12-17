@@ -1,0 +1,12 @@
+---
+options:
+  # parameter_mode: tokens
+samples:
+  attach volume: cloud_blockstorage/attach_detach_volume.py
+  upload directory: cloudfiles/upload_directory.py
+  change metadata: cloudfiles/object_metadata.py
+  get file: cloudfiles/get_objects.py
+  delete container:  cloudfiles/delete_container.py
+  add message: cloudqueues/post_message.py
+  create load balancer: cloud_loadbalancers/create_lb.py
+  setup ssl: cloud_loadbalancers/ssl_termination.py
