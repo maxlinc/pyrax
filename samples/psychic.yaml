@@ -1,7 +1,7 @@
 ---
 options:
   # parameter_mode: tokens
-samples:
+scripts:
   attach volume: cloud_blockstorage/attach_detach_volume.py
   upload directory: cloudfiles/upload_directory.py
   change metadata: cloudfiles/object_metadata.py
